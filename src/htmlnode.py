@@ -22,4 +22,4 @@ class HTMLNode:
         return html
     
     def __repr__(self):
-        return f"HTMLNode({self.tag}, {self.value}, {self.children}, {self.props})"
+        return f"HTMLNode({self.tag}, {self.value}, children: {self.children}, {self.props})"
