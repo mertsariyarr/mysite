@@ -1,6 +1,6 @@
 import unittest
 
-from htmlnode import HTMLNode, LeafNode
+from htmlnode import HTMLNode, LeafNode, ParentNode
 
 class TestHTMLNode(unittest.TestCase):
     def test_eq(self):
@@ -42,7 +42,7 @@ class TestLeafNode(unittest.TestCase):
     def test_leaf_no_tag(self):
         node = LeafNode(None, "google.com")
         self.assertEqual(node.to_html(), "google.com")
-
+    
 
 
 
